@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<artifactId>maven2</artifactId>
-		<groupId>org.objectstyle.woproject.maven2</groupId>
-		<version>5.0.0-SNAPSHOT</version>
-	</parent>
-
+	<groupId>io.github.wocommunity</groupId>
 	<artifactId>maven-javamonitor-plugin</artifactId>
+	<version>5.0.0-SNAPSHOT</version>
 	<packaging>maven-plugin</packaging>
 	<name>Maven JavaMonitor Plugin</name>
 
@@ -15,14 +13,17 @@
 		<dependency>
 			<groupId>org.apache.maven</groupId>
 			<artifactId>maven-plugin-api</artifactId>
+			<version>2.0.9</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.maven</groupId>
 			<artifactId>maven-artifact</artifactId>
+			<version>2.1.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.maven</groupId>
 			<artifactId>maven-project</artifactId>
+			<version>2.0.9</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.maven</groupId>
@@ -42,16 +43,21 @@
 		<dependency>
 			<groupId>org.codehaus.plexus</groupId>
 			<artifactId>plexus-utils</artifactId>
+			<version>1.5.6</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
+			<version>2.4</version>
 		</dependency>
 	</dependencies>
 
 	<scm>
-		<connection>scm:svn:http://svn.objectstyle.org/repos/woproject/trunk/woproject/maven2/javamonitor-maven-plugin</connection>
-		<developerConnection>scm:svn:https://svn.objectstyle.org/repos/woproject/trunk/woproject/maven2/javamonitor-maven-plugin</developerConnection>
-		<url>http://svn.objectstyle.org/repos/woproject/trunk/woproject/maven2/javamonitor-maven-plugin</url>
+		<connection>
+			scm:svn:http://svn.objectstyle.org/repos/woproject/trunk/woproject/maven2/javamonitor-maven-plugin</connection>
+		<developerConnection>
+			scm:svn:https://svn.objectstyle.org/repos/woproject/trunk/woproject/maven2/javamonitor-maven-plugin</developerConnection>
+		<url>
+			http://svn.objectstyle.org/repos/woproject/trunk/woproject/maven2/javamonitor-maven-plugin</url>
 	</scm>
 </project>
